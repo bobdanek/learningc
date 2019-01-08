@@ -26,20 +26,20 @@ int main(void)
     else if (state == OUT) {
       state = IN;
       length = 0;
-      /* putchar('\n'); */
     }
     if (state == IN)
-      /* putchar(c); */
       ++length;
   }
+
   printf("Word lengths:\n");
+
   for (i = 1; i < 9; ++i)
     {
-      /* printf(" %d: %d\n", i, wordlen[i]); */
       printf(" %d: ", i);
       for (j = 0; j < wordlen[i]; ++j)
         printf("*");
       printf("\n");
     }
+
   printf("9+: %d\n",  wordlen[9]);
 }
